@@ -1,0 +1,129 @@
+/* CSS RULE SYNTAX: 
+<selector> {
+  <css statements>
+}
+*/
+/*
+  CSS SELECTORS YOU CAN USE:
+  - element (tag name to select an element)
+  - #id (select an element by id)
+  - .class (select an element by class name)
+*/
+body {
+  /* font-family:Arial,Helvetica,sans-serif; */ /* set a font stack for the font-family property */
+  /* font-size:1em; */ /* default for browsers is 16px */
+  /* line-height:1.5; */
+  font: normal 1em/1.5 Arial,Helvetica,sans-serif; /* font: <style> <size>/<line-height> <font-family>; */
+  margin:0; /* apply 0 margin on all sides */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight:normal; /* not bolded */
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+  font-size:2em; /* effectively, this displays as 32px (16px * 2) */
+}
+h2 {
+  font-style:italic; /* note: oblique just slants the normal text instead of using the italic version of the font */
+}
+/* Pseudoclasses are written like :<pseudoclass_name>.
+ * They allow you to select an element within a certain 
+ * state.
+ */
+/* POSSIBLE LINK-RELATED PSEUDOCLASSES
+ * - :link (an element which is a link)
+ * - :visited (a link whose href has been visited before)
+ * - :hover (an element which is being hovered over)
+ * - :active (an element which currently has the mouse down over it but before mouse up)
+ */
+a:link {
+  color:red;
+  text-decoration:none;
+}
+a:visited {
+  color:green;
+}
+a:hover {
+  color:#333; /* equivalent to #333333 */
+  text-decoration:underline;
+}
+a:active {
+  color:orange;
+}
+
+/* HEADER STYLES */
+#header {
+  background-color:#b3b0bc;
+  padding:1em; /* add 1em padding on all sides of #header */
+  border-bottom:5px solid #333; /* <border-width> <border-style> <border-color> */
+}
+#site-name {
+  letter-spacing:5px; /* adjust kerning (spacing between characters */
+  margin:0;
+}
+#site-name a:link,
+#site-name a:visited {
+  color:red;
+}
+#site-name a:hover,
+#site-name a:active {
+  color:#000; /* black: equivalent to #000000 */
+  text-decoration:none;
+}
+/* MENU STYLES */
+.menu {
+  list-style:none; /* ensure no bullet points */
+  margin:0; /* remove large margins on top and bottom of ul */
+  padding:0; /* remove large gap on left */
+}
+.menu li {
+  display:inline-block; /* display inline but behaves like a block (so you can set width and height if you wish) */
+  margin-right:2em; /* add gaps on the right of each li */
+}
+/* select the li which is the last element within its parent container (in this case the ul.menu) */
+.menu li:last-child {
+  margin:0;
+}
+/* need to include :visited to override the default a:visited rule above */
+.menu a:link,
+.menu a:visited {
+  color:#000;
+}
+/* need to include :active to override the default a:active rule above */
+.menu a:hover,
+.menu a:active {
+  color:red;
+  text-decoration:none;
+}
+/* BUTTON STYLES */
+button, a.button {
+  background-color:#000;
+  color:#fff;
+  padding:0.5em 0.8em; /* <padding-top and -bottom> <padding-left and -right> */
+  /* border-radius:0 5px 10px 15px; */ /* start at top-left and go clockwise */
+  /* border-radius:0 5px 10px; */ /* <top-left> <top-right and bottom-left> <bottom-right> */
+  /* border-radius:0 5px; */ /* <top-left and bottom-right> <top-right and bottom-left> */
+  border-radius:0.5em;
+  border:none;
+  font-family:inherit; /* inherit font-family from parent */
+  display:inline-block; /* to ensure that a.button doesn't break awkwardly if the "button" has multi-line text (because it has display:inline by default) */
+  text-align:center; /* center text */
+}
+button:hover, a.button:hover {
+  background-color:red;
+  text-decoration:none; /* no underline */
+}
+.small {
+  font-size:0.8em; /* By using em, you can create a variant size class like this and apply it. Since padding, border-radius and font-size are using em, everything rescales proportionally when the font-size is changed. */
+}
+#sidebar {
+  font-size:0.9em; /* shrink to 90% the default */
+}
+/* Select all h2 elements which are descendants of an element with the id "sidebar" */
+#sidebar h2 {
+  font-size:1.2em; /* results in 16px * 0.9 * 1.2 */
+  text-transform:uppercase;
+}
+.footer-section h2 {
+  color:red;
+}
