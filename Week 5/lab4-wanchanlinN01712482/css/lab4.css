@@ -1,0 +1,88 @@
+#flex-1, #flex-2 {
+  margin:1em 0;
+  background-color:purple;
+}
+.item {
+  background-color:yellow;
+  padding:30px;
+  align-self: center;
+}
+.item:nth-child(4),
+.item:nth-child(2){
+  align-self:flex-end;
+}
+
+
+/* FLEX 1 */
+#flex-1 {
+  display: flex;
+  max-width:500px; /* make this no wider than 500px */
+  height:300px;
+  justify-content:space-between;
+
+  /* This is a flex container. What needs to be set? */
+  /* It's a row, displayed at the bottom, and spaced out. */
+
+}
+
+/* flex stuff for the even items in #flex-1 here */
+
+
+/* FLEX 2 */
+#flex-2 {
+  display:flex ;
+  padding:1em;
+  gap: 1.5em;
+  
+
+  /* This is a flex container. */
+  /* Set needed flex container properties here. */
+  
+}
+.triple, .single {
+ 
+  padding:1em;
+  background-color:yellow;
+  flex-basis: 0;
+}
+.triple {
+  display: flex;
+  flex-direction: column;
+  flex-grow:3;
+  
+  
+  /* This is a flex item. */
+  /* Use flex-basis and flex-grow so this is triple width. */
+
+}
+.single {
+
+  display: flex;
+  flex-grow:1;
+  
+  /* This is a flex item. */
+  /* Use flex-basis and flex-grow so it's single width. */
+
+
+}
+#nested-flex {
+  background-color:#bfa0bf;
+  padding:1em;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  /* This is a flex container. */
+  /* This row can break to a new line. */
+  
+}
+.card {
+  flex-basis:100px;
+  background-color:orange;
+  height:150px;
+ 
+
+  /* This is a flex item. */
+  /* Cards have a default width of 100px (which flex item property--not width--to set the target width?) */
+  
+}

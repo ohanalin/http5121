@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    padding: .5em;
+
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0 0.5em;
+}
+
+nav li,
+nav h2 {
+    display: inline;
+    padding: .25em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    background-color: #000000;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    color: #ffffff;
+}
+
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("../image/hero.jpg");
+
+    /* Set a specific height */
+    height: 50vh;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+.article {
+    max-width: 50rem;
+    padding: 5rem;
+    margin: auto;
+}
+
+.article-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.subscription {
+    background-color: #bcbcbc;
+    text-align: center;
+    padding: 2rem;
+}
+
+.subscriptionForm {
+    display: flex;
+    justify-content: center;
+}
+
+.copyright {
+    padding: 2rem;
+    color: #ffffff;
+    text-align: center;
+}
