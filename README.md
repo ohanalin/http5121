@@ -1,4 +1,4 @@
-# http5121
+# http5121- Front-End Development
 This repository contains files, resources, and assignments for the HTTP5121 Web Design class at Number College. This course explores the fundamentals of web design, including:
 
 -Visual design principles and color theory
