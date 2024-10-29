@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL/DEFAULT STYLES
+ * 2. HEADER
+ * -- 2a. Site name and logo
+ * -- 2b. Navigation
+ * 3. MAIN CONTENT
+ * -- 3a. Hero
+ * -- 3b. Other sections
+ * 4. FOOTER
+ * -- 4a. Navigation
+ *************************************************************/
+
+/* 1. GENERAL/DEFAULT STYLES */
+:root {
+  --accent-color:#E0376A;
+}
+/* To set the box-sizing property, it's recommended to set it like below because the box-sizing property (unlike typical CSS properties) does not cascade through the children (it does not get inherited by the children by default). By setting the box-sizing in html (the root element) then selecting every element and their ::before/::after pseudo elements to inherit the box-sizing property from the parent, this mimics the typical cascading/inheriting behaviour of CSS. */
+html {
+  box-sizing:border-box;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+  font:300 1em/1.2 "Open Sans",sans-serif; /* 1em = 16px by default */
+  margin:0; /* get rid of default gap around page edges */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:"Lato", sans-serif;
+  font-weight:900;
+  text-transform:uppercase;
+}
+h2 {
+  font-size:1.5em; /* 24px / 16px = 1.5 */
+}
+h3 {
+  font-size:1.25em; /* 20px / 16px = 1.25 */
+}
+.content-wrapper {
+  max-width:1300px;
+  margin:0 auto;
+  padding:1.25em; /* 20px / 16px = 1.25 */
+}
+a:link {
+  color:var(--accent-color);
+}
+a:hover {
+  text-decoration:none;
+}
+button, 
+a.button:link,
+a.button:visited {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  font-family:inherit;
+  font-size:0.9375em; /* 15px / 16px = 0.9375 */
+  padding:0.8em; /* 12px / 15px = 0.8 */
+  border-radius:0.67em;
+  display:inline-block; /* let this display inline with other inline elements but allow us to use some block properties like width or height */
+  min-width:153px;
+  text-align:center;
+}
+button:hover,
+a.button:hover {
+  background-color:var(--accent-color);
+}
+.pink-bg {
+  background-color:var(--accent-color);
+}
+.pink-bg button:hover,
+.pink-bg a.button:hover {
+  background-color:#000;
+  color:var(--accent-color);
+}
+/* 2. HEADER */
+#header {
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:center; /* vertically center */
+}
+#header a:link,
+#header a:visited {
+  color:#000;
+  text-decoration:none;
+}
+
+/* -- 2a. Site name and logo */
+#logo-and-site-name {
+  font-size:2em; /* 32px (target) / 16px (inherited default size) = 2 */
+  margin:15px 0 18px 0;
+}
+#logo-and-site-name a::before {
+  content:"(^._.^)";
+  color:var(--accent-color);
+}
+
+/* -- 2b. Navigation */
+#main-navigation {
+  font-family:"Lato",sans-serif;
+  text-transform:uppercase;
+  font-size:1.5em; /* 24px / 16px = 1.5 */
+}
+.menu {
+  display:flex;
+  list-style:none;
+  column-gap: 1.615em; /* 38.75px / 24px = 1.615 */
+  margin:0;
+}
+
+/* 3. MAIN CONTENT */
+
+/* -- 3a. Hero */
+.hero-wrapper {
+  background:linear-gradient(to right, #12110f, #282421);
+}
+.hero-text {
+  background:url("../images/hero-black-cat.png") center center no-repeat;
+}
+.hero-text h1 {
+  font-size:6em; /* 96px / 16px = 6 */
+  color:#fff;
+  text-shadow:5px 5px 0 var(--accent-color);
+  margin:1.0625em 0; /* (122px - 20px padding) / 96px = 1.0625 */
+}
+
+/* -- 3b. Other sections */
+#join-us-section {
+  text-align:center;
+}
+.feature-text {
+  font-size:2em;
+}
+#learn-section {
+  text-align:center;
+}
+#learn-section h3 a:link {
+  color:#fff;
+  text-decoration:none;
+}
+#learn-section h3 a:hover {
+  color:#000;
+}
+#learn-section .content-wrapper {
+  display:flex;
+  flex-flow:row wrap;
+}
+.col {
+  flex:1 1 0;
+}
+/* 4. FOOTER */
+
+/* -- 4a. Navigation */
