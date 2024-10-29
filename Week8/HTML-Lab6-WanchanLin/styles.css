@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*************************************************************
+ * 1. RESET & BASE STYLES
+ *************************************************************/
+
+/* Global box-sizing reset */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Typography */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* General content wrapper */
+.content-wrapper,
+.copyright {
+    max-width: 1300px;
+    margin: auto;
+    padding: 1.25em;
+}
+
+/*************************************************************
+ * 2. HEADER
+ *************************************************************/
+
+/* Header layout */
+#header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header links */
+#header a:link,
+#header a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.menu {
+    display: flex;
+    list-style: none;
+    column-gap: 1.615em; /* 38.75px / 24px = 1.615 */
+    margin: 0;
+}
+
+/*************************************************************
+ * 3. BUTTONS
+ *************************************************************/
+
+button, 
+a.button:link,
+a.button:visited {
+    background-color: #fff;
+    color: #AD00FF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25em;
+    padding: 0.8em;
+    border-radius: 2.25em;
+    display: inline-block;
+    min-width: 153px;
+    text-align: center;
+    margin: auto;
+    outline: 0.3125em solid #AD00FF;
+}
+
+/* Button hover state */
+button:hover,
+a.button:hover {
+    background-color: #670296;
+    color: #fff;
+}
+
+/*************************************************************
+ * 4. HERO SECTION
+ *************************************************************/
+
+.hero-wrapper {
+    margin: 0;
+}
+
+.hero-image {
+    max-width: 1300px;
+   
+    background-image:
+    linear-gradient(to bottom, rgba(32, 32, 33, 0.222), rgba(255, 255, 255, 0)),
+    url('../images/macarons.png');
+    padding: 6.5em;
+    margin: auto;
+}
+
+.hero-image h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(38, 38, 38, 0.25);
+}
