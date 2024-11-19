@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+}
+
+h2{
+    font-size:  3rem;
+}
+nav {
+   
+    padding: .5em;
+
+}
+
+button {
+    background-color: #FFDD2D;
+    color: #11111;
+    margin: 0 0.5em;
+    border-radius: .25rem ;
+}
+
+nav li,
+nav h2 {
+    display: inline;
+    padding: .25em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+p {
+    margin: 0;
+}
+
+footer {
+    padding-top: 2rem;
+    background-color: #FFDD2D;
+    margin: 0;
+}
+textarea, 
+input{
+    color:#3c3c3c;
+	border-radius: 0;
+	background-color: #fbfbfb;
+	width:100%;
+    border: 3px solid rgba(0,0,0,0);
+}
+textarea{
+    resize: vertical;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50rem;
+    margin: auto;
+
+}
+
+.logo {
+width: 8rem;
+
+}
+
+
+.hero-image {
+    background-image: url("../image/hero.jpg");
+
+    height: 50vh;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+
+.article {
+    max-width: 50rem;
+    padding: 5rem;
+    margin: auto;
+}
+
+.article-img {
+    margin: 2rem 0 0 0;
+    width: 100%;
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.subscription {
+    display: flex;
+    background-color:#e5cc66;
+    text-align: center;
+    
+}
+
+.subscriptionForm {
+    
+    display: flex;
+  
+}
+
+.copyright {
+    padding: 2rem;
+    text-align: center;
+}
+.icon{
+    opacity: 80%;
+    width:3.375 rem;
+    margin: 2rem 0.25rem;
+}
+.center{
+    margin: auto;
+}
+.cta{
+    text-align: left;
+    margin: 5rem;
+}
+.cta-img{
+    background-image: url("https://t3.ftcdn.net/jpg/07/28/50/32/240_F_728503286_tlFKXRJ1x6YynZ1uFc351s3XJG6EvfR5.jpg");
+    width: 50vw;
+    background-size: 600px auto;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #ebdea9;
+    margin: 2rem auto;
+
+    position: relative;
+    filter: drop-shadow( 10px 4px #ddbc39);
+}
+
+iframe {
+    width: 100%;
+}
+/* .submit-btn{
+    width:100% ;
+    background-color:#FFDD2D;
+} */
