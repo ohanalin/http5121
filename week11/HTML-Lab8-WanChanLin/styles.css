@@ -4,7 +4,7 @@
   width: 212px;
   height: 100px;
   box-sizing: content-box;
-  transition: transform 2s, background-color 2s;
+  transition: transform 2s, background-color 2s, opacity 2s; 
 }
 
 #infinity:before,
@@ -19,7 +19,8 @@
   border: 20px solid red;
   border-radius: 50px 50px 0 50px;
   transform: rotate(-45deg);
-  transition: transform 2s, border-color 2s;
+  transition: opacity 2s; 
+
 }
 
 #infinity:after {
@@ -45,17 +46,19 @@ button {
 }
 
 button:hover {
-  background-color: #cfdf18;
+  transform: scale(1.1); /* Grow in size on hover */
+  background-color: #cfdf18; 
   color: black;
 }
 
 /* Animation class */
 .animate {
-  transform: rotate(1800deg) scale(1.2); /* 360deg * 5 rotations */
-  
+
+  transform: rotate(1800deg) scale(6); /* 360deg * 5 rotations */
 }
 
 .animate:before,
 .animate:after {
-  border-color: #cfdf18; /* Change color of the borders */
+ 
+  opacity: 0.3;
 }
