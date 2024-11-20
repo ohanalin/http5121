@@ -1,65 +1,62 @@
-body {
+body { 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0;
     background-color: #EDEBE6;
 }
 
-h2{
+h2 {
     font-size: 3em;
     text-align: center;
-   
 }
-h3{
-    font-size:  1em;
-    line-height: 100%;
-    margin: 0%;
-}
-p{
-    text-size:1em;
-}
-nav {
-   
-    padding: .5em;
 
+h3 {
+    font-size: 1em;
+    line-height: 120%;
+    margin: 0;
 }
-.navcolour{
+
+p {
+    font-size: 0.75em;
+    margin: 0;
+}
+
+nav {
+    padding: 0.5em;
+}
+
+.navcolour {
     background-color: #FFDD2D;
 }
 
 .btn {
-    background-color: #FFDD2D; /* Button background color */
-    color: #111111; /* Text color */
-    margin: 0.5em 0; /* Spacing */
-    border-radius: 0.25rem; /* Rounded corners */
-    font-size: 24px; /* Font size */
-    padding: 0.625em; /* Padding inside the button */
-    text-align: center; /* Center-align text */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect for hover */
-    display: inline-block; /* Ensure it behaves like a button */
-    text-decoration: none; /* Remove underline for links */
-    cursor: pointer; /* Pointer cursor */
+    background-color: #FFDD2D;
+    color: #111111;
+    margin: 0.5em 0;
+    border-radius: 0.25rem;
+    font-size: 24px;
+    padding: 0.625em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover {
-    transform: scale(1.1); /* Make the button grow slightly */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop effect */
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav li,
 nav h2 {
     display: inline;
-    padding: .25em;
+    padding: 0.25em;
 }
 
 a {
     text-decoration: none;
     color: #000;
-
-}
-
-p {
-    margin: 0;
 }
 
 footer {
@@ -67,119 +64,71 @@ footer {
     background-color: #FFDD2D;
     margin: 0;
 }
+
 textarea, 
-input{
-    color:#3c3c3c;
-	border-radius: 0;
-	background-color: #fbfbfb;
-	width:100%;
-    border: 3px solid rgba(0,0,0,0);
+input {
+    color: #3c3c3c;
+    background-color: #fbfbfb;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
-textarea{
+
+textarea {
     resize: vertical;
 }
-
+label{
+    font-size: 0.75rem;
+}
 
 .navbar {
+    max-width: 60rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 50rem;
+   
     margin: auto;
-
 }
 
 .logo {
-width: 8rem;
-
+    width: 8rem;
 }
-
-
-.hero-image {
-    background-image: url("../image/hero.jpg");
-
-    height: 50vh;
-
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-}
-
-
 
 .content {
-    max-width: 90rem;
+    max-width: 60rem;
     padding: 5rem;
     margin: auto;
 }
 
-
-.subscription {
-    display: flex;
-    background-color:#e5cc66;
-    text-align: center;
-    
-}
-
-.subscriptionForm {
-    
-    display: flex;
-  
-}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-
-  }
-  
-  .grid-item {
-   
-    
-    font-size: 30px;
-
-  }
-  .project{
-    width: 100%;
-  }
-  .project-content{
- margin: 10% 0;
-  }
-
-.copyright {
-    padding: 2rem;
-    text-align: center;
 }
-.icon{
-    
-    text-align: center;
+
+.grid-item {
+    font-size: 30px;
+}
+
+.project {
+    width: 100%;
+}
+
+.project-content {
+    margin: 10% 0;
+}
+
+.icon {
     opacity: 80%;
-    width:3.375 rem;
+    width: 3.375rem;
     margin: 2rem 0.25rem;
 }
-.center{
-    margin: auto;
-}
-.cta{
-    text-align: left;
-    margin: 5rem;
-}
-.cta-img{
-    background-image: url("https://t3.ftcdn.net/jpg/07/28/50/32/240_F_728503286_tlFKXRJ1x6YynZ1uFc351s3XJG6EvfR5.jpg");
-    width: 50vw;
-    background-size: 600px auto;
-}
-.comment{
+
+.comment {
+    width: 35.18rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
-    background-color: #ebdea9;
-    margin: 2rem auto;
-
-    position: relative;
-    filter: drop-shadow( 10px 4px #ddbc39);
+   
+   
 }
 
 iframe {
@@ -187,3 +136,12 @@ iframe {
     border-width: 0;
 }
 
+.socialLink {
+    text-decoration: underline;
+    font-size: 0.75em;
+}
+
+.copyright {
+    padding: 2rem;
+    text-align: center;
+}
