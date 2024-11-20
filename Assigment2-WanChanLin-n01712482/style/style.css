@@ -2,22 +2,48 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0;
+    background-color: #EDEBE6;
 }
 
 h2{
-    font-size:  3rem;
+    font-size: 3em;
+    text-align: center;
+   
+}
+h3{
+    font-size:  1em;
+    line-height: 100%;
+    margin: 0%;
+}
+p{
+    text-size:1em;
 }
 nav {
    
     padding: .5em;
 
 }
-
-button {
+.navcolour{
     background-color: #FFDD2D;
-    color: #11111;
-    margin: 0 0.5em;
-    border-radius: .25rem ;
+}
+
+.btn {
+    background-color: #FFDD2D; /* Button background color */
+    color: #111111; /* Text color */
+    margin: 0.5em 0; /* Spacing */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-size: 24px; /* Font size */
+    padding: 0.625em; /* Padding inside the button */
+    text-align: center; /* Center-align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effect for hover */
+    display: inline-block; /* Ensure it behaves like a button */
+    text-decoration: none; /* Remove underline for links */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Make the button grow slightly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for a pop effect */
 }
 
 nav li,
@@ -83,19 +109,12 @@ width: 8rem;
 
 
 
-.article {
-    max-width: 50rem;
+.content {
+    max-width: 90rem;
     padding: 5rem;
     margin: auto;
 }
 
-.article-img {
-    margin: 2rem 0 0 0;
-    width: 100%;
-    
-    max-width: 100%;
-    max-height: 100%;
-}
 
 .subscription {
     display: flex;
@@ -109,12 +128,32 @@ width: 8rem;
     display: flex;
   
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+
+  }
+  
+  .grid-item {
+   
+    
+    font-size: 30px;
+
+  }
+  .project{
+    width: 100%;
+  }
+  .project-content{
+ margin: 10% 0;
+  }
 
 .copyright {
     padding: 2rem;
     text-align: center;
 }
 .icon{
+    
+    text-align: center;
     opacity: 80%;
     width:3.375 rem;
     margin: 2rem 0.25rem;
@@ -145,8 +184,6 @@ width: 8rem;
 
 iframe {
     width: 100%;
+    border-width: 0;
 }
-/* .submit-btn{
-    width:100% ;
-    background-color:#FFDD2D;
-} */
+
