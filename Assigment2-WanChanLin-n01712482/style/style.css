@@ -67,6 +67,7 @@ footer {
 
 textarea, 
 input {
+    border-radius: 0.25rem;
     color: #3c3c3c;
     background-color: #fbfbfb;
     width: 100%;
@@ -102,6 +103,7 @@ label{
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 1rem;
 }
 
 .grid-item {
@@ -131,6 +133,13 @@ label{
    
 }
 
+.socialmedia-icon{
+    width: 2rem;
+    ;
+    
+}
+
+
 iframe {
     width: 100%;
     border-width: 0;
@@ -139,6 +148,18 @@ iframe {
 .socialLink {
     text-decoration: underline;
     font-size: 0.75em;
+}
+.sticky{
+    gap:0.75em;
+    display: flex;
+    flex-flow: column;
+    padding: 1em;
+    position: fixed;
+    background-color: #FFDD2D;
+    right:0%;
+    top: 70%;
+    border-radius: 0.25rem;
+
 }
 
 .copyright {
