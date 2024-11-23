@@ -5,28 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-<div class="sticky">
-    <img class=".socialmedia-icon" src="image/instgram.svg" alt="">
-    <img class=".socialmedia-icon" src="image/Facebook.svg" alt="">
-    <img class=".socialmedia-icon" src="image/linkedin.svg" alt="">
-</div>
-    <nav class="navcolour">
-        <div class="navbar ">
-            <img class="logo" src="image/Wanchan Logo.svg" alt="">
-            <ul>
-                <li><a href="#">Home </a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
+    <div class="sticky">
+        <img class=".socialmedia-icon" src="image/instgram.svg" alt="">
+        <img class=".socialmedia-icon" src="image/Facebook.svg" alt="">
+        <img class=".socialmedia-icon" src="image/linkedin.svg" alt="">
+    </div>
+    <div class="containerbg">
+        <div class="container">
+
+            <div>
+                <img class="logo" src="image/Wanchan Logo.svg" alt="">
+                <div class="nav-toggle" id="navToggle">
+
+                    <img id="navClosed" class="navIcon"
+                        src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/hamburger.svg"
+                        alt="hamburger menu">
+                    <img id="navOpen" class="navIcon hidden"
+                        src="https://www.richardmiddleton.me/wp-content/themes/richardcodes/assets/img/close.svg"
+                        alt="close hamburger">
+                </div>
+            </div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
         </div>
-    </nav>
+    </div>
+
 
 
 
@@ -43,12 +62,12 @@
                     </div>
                 </div>
                 <div class="grid-item">
-                    <iframe
-                        src='https://my.spline.design/molang3dcopy-c9b8b1e0f8194f9676893be691bea9f7/' frameborder='0'
-                        width='100%' height='100%'></iframe></div>
+                    <iframe src='https://my.spline.design/molang3dcopy-c9b8b1e0f8194f9676893be691bea9f7/'
+                        frameborder='0' width='100%' height='100%'></iframe>
+                </div>
             </div>
             <h2>SKILLSETS</h2>
-            <div style="align-items: center;">
+            <div class="iconcontainer">
                 <img class="icon" src="image/Canva.png" alt="">
                 <img class="icon" src="image/C.png" alt="">
                 <img class="icon" src="image/Css.png" alt="">
@@ -94,20 +113,20 @@
             <iframe src="https://lottie.host/embed/2e783202-8148-4201-b590-8300f6cc1866/T8w8mY5tat.json"></iframe>
             <div class="grid-container">
                 <div class="grid-item">
-                    
-                        <div class="infosection">
-                            <h3>Let’s Talk</h3>
-                            <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear
-                                about
-                                your project and provide help </p>
-                        </div>
 
-                        <div class="infosection"> 
-                            <h3>Socials</h3>
-                            <a class="socialLink" href="#">Instagram </a> 
-                            <a class="socialLink" href="#">Facebook </a>
-                        </div>
-                    
+                    <div class="infosection">
+                        <h3>Let’s Talk</h3>
+                        <p>Have some big idea or brand to develop and need help? Then reach out we'd love to hear
+                            about
+                            your project and provide help </p>
+                    </div>
+
+                    <div class="infosection">
+                        <h3>Socials</h3>
+                        <a class="socialLink" href="#">Instagram </a>
+                        <a class="socialLink" href="#">Facebook </a>
+                    </div>
+
                 </div>
                 <div class="grid-item">
                     <form class="comment">
@@ -140,6 +159,7 @@
             <p class="copyright">© Copyright ©2024 WanChan Lin</p>
         </footer>
 
+        <script src="javascrip.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,34 @@
-body { 
+/* ========== Global Styles ========== */
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     margin: 0;
+    padding: 0;
     background-color: #EDEBE6;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+textarea, input {
+    background-color: #fbfbfb;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 0.25rem;
+    color: #3c3c3c;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+iframe {
+    width: 100%;
+    border-width: 0;
+}
+
+/* ========== Typography ========== */
 h2 {
     font-size: 3em;
     text-align: center;
@@ -21,6 +45,71 @@ p {
     margin: 0;
 }
 
+label {
+    font-size: 0.75rem;
+}
+
+/* ========== Navigation ========== */
+
+.containerbg{
+    background:#FFDD2D} 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 77.87rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    padding: 0 1.25rem;
+  }
+  
+  li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  li:hover a {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Toggle */
+  
+  .nav-toggle {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav-toggle img {
+    width: 1rem;
+    transition: 300ms all ease;
+  }
+  
+  .nav-toggle:hover img {
+    opacity: 0.6;
+  }
+  
+  .open {
+    height: 100vh;
+  }
+  
+  .hidden {
+    display: none;
+  }
+/* ---------------------------------*/
+
 nav {
     padding: 0.5em;
 }
@@ -29,18 +118,35 @@ nav {
     background-color: #FFDD2D;
 }
 
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 77.87rem;
+}
+
+nav li, nav h2 {
+    display: inline;
+    padding: 0.25em;
+}
+.logo{
+    width: 10rem;
+}
+
+/* ========== Buttons ========== */
 .btn {
     background-color: #FFDD2D;
-    color: #111111;
-    margin: 0.5em 0;
     border-radius: 0.25rem;
+    color: #111111;
+    cursor: pointer;
+    display: inline-block;
     font-size: 24px;
+    margin: 0.5em 0;
     padding: 0.625em;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: inline-block;
     text-decoration: none;
-    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
@@ -48,68 +154,35 @@ nav {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav li,
-nav h2 {
-    display: inline;
-    padding: 0.25em;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
+/* ========== Footer ========== */
 footer {
-    padding-top: 2rem;
     background-color: #FFDD2D;
     margin: 0;
+    padding-top: 2rem;
 }
 
-textarea, 
-input {
-    border-radius: 0.25rem;
-    color: #3c3c3c;
-    background-color: #fbfbfb;
-    width: 100%;
-    border: 3px solid rgba(0, 0, 0, 0);
+.copyright {
+    padding: 2rem;
+    text-align: center;
 }
 
-textarea {
-    resize: vertical;
-}
-label{
-    font-size: 0.75rem;
-}
-
-.navbar {
-    max-width: 60rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-    margin: auto;
-}
-
-.logo {
-    width: 8rem;
-}
-
+/* ========== Layout ========== */
 .content {
-    max-width: 60rem;
-    padding: 5rem;
     margin: auto;
+    max-width: 77.875rem;
+    padding: 3.75rem;
 }
-.infosection{
-    width: 100%;
-    padding: 1rem 0;
-    margin: 1rem 0;
 
+.infosection {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100%;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
     gap: 1rem;
+    grid-template-columns: 50% 50%;
 }
 
 .grid-item {
@@ -124,51 +197,128 @@ label{
     margin: 10% 0;
 }
 
-.icon {
-    opacity: 80%;
-    width: 3.375rem;
-    margin: 2rem 0.25rem;
-}
-
 .comment {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   
-   
-}
-
-.socialmedia-icon{
-    width: 2rem;
-    ;
-    
-}
-
-
-iframe {
     width: 100%;
-    border-width: 0;
+}
+
+/* ========== Icons ========== */
+.iconcontainer{
+ text-align: center;
+}
+.icon {
+
+    margin: 1rem;
+    width: 3.375rem;
+}
+
+.socialmedia-icon {
+    width: 2rem;
 }
 
 .socialLink {
-    text-decoration: underline;
     font-size: 0.75em;
+    text-decoration: underline;
 }
-.sticky{
-    gap:0.75em;
+
+/* ========== Sticky Section ========== */
+.sticky {
+    background-color: #FFDD2D;
+    border-radius: 0.25rem;
     display: flex;
     flex-flow: column;
+    gap: 0.75em;
     padding: 1em;
     position: fixed;
-    background-color: #FFDD2D;
-    right:0%;
+    right: 0%;
     top: 70%;
-    border-radius: 0.25rem;
-
+}
+#menuToggle{
+    display: none;
 }
 
-.copyright {
-    padding: 2rem;
-    text-align: center;
+/* ========== Responsive Design ========== */
+@media only screen and (max-width: 768px) {
+   
+    iframe {
+        width: 200%;
+        border-width: 0;
+    }
+    .logo{
+        width: 10rem;
+    }
+    .content {
+        padding: 0.75rem;
+    }
+
+}
+@media only screen and (max-width: 320px){
+    iframe {
+        width: 300%;
+        border-width: 0;
+    }
+
+    /* ========== Typography ========== */
+    h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+  
+    .content{
+        padding:0.75rem;
+    }
+  
+/* ---------------------------------*/
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFDD2D;
+  }
+
+  
+
+  nav {
+    
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 250ms height ease-in-out;
+  }
+
+  li {
+    display: block;
+    text-align: left;
+    padding: 1.5rem 0;
+  }
+
+  li a {
+    font-size: 1.4rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  .logo{
+    width: 5.437rem;
+   margin-top: 1.5rem;
+  }
+  .icon{
+    width: 2.8rem;
+    margin:0.375rem;
+  }
+
 }
