@@ -1,0 +1,65 @@
+#stage {
+  margin-top: 1rem;
+  position: relative;
+  color: #1c1341;
+  height: 300px;
+  border: 1px solid #000;
+  animation: stage-color 6s infinite both 1s;
+}
+
+#ball {
+  position: absolute; /* Important so you can move this with left/right/top/bottom */
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: blue;
+  /* Properly formatted animation shorthand */
+  animation: 
+      ball-move 6s infinite both 1s, 
+      color-change 4s forwards;
+}
+
+@keyframes ball-move {
+  0% {
+      /* Start of the animation */
+      bottom: 0;
+      right: 0;
+  }
+  50% {
+      /* Halfway through the animation duration */
+      bottom: calc(100% - 75px);
+      right: calc(50% - 37.5px);
+  }
+  100% {
+      /* End of the animation */
+      bottom: 0;
+      right: calc(100% - 75px);
+  }
+}
+
+@keyframes color-change {
+  0% {
+      background-color: blue; /* Fixed from `color:red` to match the type of property */
+  }
+  50% {
+      background-color: yellow;
+  }
+  100% {
+      background-color: orange;
+  }
+}
+
+@keyframes stage-color {
+  0% {
+      background-color: blue;
+  }
+  25% {
+      background-color: darkorange;
+  }
+  75% {
+      background-color: skyblue;
+  }
+  100% {
+      background-color: crimson;
+  }
+}
