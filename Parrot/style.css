@@ -1,0 +1,104 @@
+/* Basic Setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #cfefff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .parrot-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Parrot Styling */
+  .parrot {
+    position: relative;
+    width: 100px;
+    height: 150px;
+  }
+  
+  .body {
+    width: 60px;
+    height: 90px;
+    background: green;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .wing {
+    width: 60px;
+    height: 30px;
+    background: limegreen;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    animation: flap 1s infinite;
+  }
+  
+  @keyframes flap {
+    0%, 100% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+      transform: translateX(-50%) rotate(20deg);
+    }
+  }
+  
+  .beak {
+    width: 20px;
+    height: 10px;
+    background: orange;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+  
+  .eye {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    border: 2px solid black;
+  }
+  
+  /* Food Styling */
+  .food {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  /* Button Styling */
+  #feed-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: #333;
+  }
+
+  
